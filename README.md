@@ -1,16 +1,28 @@
 # netflix_clone
 
-A new Flutter project.
+# Core Features 🎬
 
-## Getting Started
+#### 1. Curated Sections
+* Popular Movies Carousel : Horizontal swipeable slider showcasing trending films.
+* Now Playing/Upcoming : Horizontal scroll lists for current releases and coming soon movies.
+* New & Hot Section : Highlighting upcoming releases with dynamic updates.
+#### 2. Movie Details
+* Full-screen details view with:
+* Synopsis, cast, ratings
+"Similar Movies" recommendations based on TMDB data 
+#### 3. Search & Discovery
+* Search movies by title with auto-suggestions 8
+* Filter by categories (popular/upcoming)
 
-This project is a starting point for a Flutter application.
+## Technical Implementation 🛠
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+#### Carousel Slider :
+* Built with carousel_slider package for smooth horizontal scrolling.
+#### Horizontal Lists :
+* Implemented using ListView.builder with horizontal axis
+#### TMDB Integration :
+* Fetches data from:
+`/movie/popular`
+`/movie/now_playing`
+`/movie/upcoming`
+`/movie/{id}/similar` endpoints
